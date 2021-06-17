@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"github.com/dhowden/raspicam"
 	"log"
 	"os"
-	"github.com/dhowden/raspicam"
 )
 
 
@@ -25,5 +24,4 @@ func main() {
 
 	log.Println("Capturing Image...")
 	raspicam.Capture(s, f, errCh)
-	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 }
